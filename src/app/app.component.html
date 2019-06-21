@@ -1,0 +1,47 @@
+<nb-layout>
+
+  <nb-layout-header fixed>
+  <!-- Insert header here -->
+    
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="home">Book My Ticket</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>
+          <img class="height-adjust" src="../assets/images/ticket.png">
+      </li>
+      <li>
+        <a class="nav-item nav-link active" routerLinkActive="active" title="Experience simplicity at its best" routerLink="bookMovie">Book A Movie</a>
+      </li>
+      <li>
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink="bookings" title="Check your latest bookings here">Show Bookings</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>.   Login  -  -  - </a></li>
+      </ul>
+  </nav>
+  </nb-layout-header>
+
+  <nb-layout-column>
+
+  
+      
+    <router-outlet></router-outlet>
+    
+
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+  <!-- Insert footer here -->
+       <!-- Footer -->
+       <footer class="page-footer navbar-fixed-bottom">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="https://www.google.com/"> Google.com</a>
+        </div>
+      </footer>
+  </nb-layout-footer>
+
+</nb-layout>
